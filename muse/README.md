@@ -1,0 +1,3 @@
+Thank you for taking the extra time to review and evaluate our work.
+# MUSE
+Our entire code implementation is primarily based on the RecBole library (https://github.com/RUCAIBox/RecBole). Please download the RecBole source code to run the main model file MUSE.py. The basic model configurations and datasets are located in the MUSE.yaml file and the dataset directory, respectively. We will also further refine our code repository.
