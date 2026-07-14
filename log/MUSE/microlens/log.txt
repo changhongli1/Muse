@@ -1,0 +1,393 @@
+Sat 10 Jan 2026 10:32:00 INFO  
+[1;35mGeneral Hyper Parameters:
+[0m[1;36mgpu_id[0m =[1;33m 0[0m
+[1;36muse_gpu[0m =[1;33m True[0m
+[1;36mseed[0m =[1;33m 2020[0m
+[1;36mstate[0m =[1;33m INFO[0m
+[1;36mreproducibility[0m =[1;33m True[0m
+[1;36mdata_path[0m =[1;33m ./dataset/microlens[0m
+[1;36mshow_progress[0m =[1;33m True[0m
+
+[1;35mTraining Hyper Parameters:
+[0m[1;36mcheckpoint_dir[0m =[1;33m saved[0m
+[1;36mepochs[0m =[1;33m 50[0m
+[1;36mtrain_batch_size[0m =[1;33m 256[0m
+[1;36mlearner[0m =[1;33m adam[0m
+[1;36mlearning_rate[0m =[1;33m 0.001[0m
+[1;36mtraining_neg_sample_num[0m =[1;33m 0[0m
+[1;36mtraining_neg_sample_distribution[0m =[1;33m uniform[0m
+[1;36meval_step[0m =[1;33m 1[0m
+[1;36mstopping_step[0m =[1;33m 10[0m
+[1;36mclip_grad_norm[0m =[1;33m None[0m
+[1;36mweight_decay[0m =[1;33m 0[0m
+[1;36mdraw_loss_pic[0m =[1;33m False[0m
+[1;36mloss_decimal_place[0m =[1;33m 4[0m
+
+[1;35mEvaluation Hyper Parameters:
+[0m[1;36meval_setting[0m =[1;33m TO_LS,full[0m
+[1;36mgroup_by_user[0m =[1;33m True[0m
+[1;36msplit_ratio[0m =[1;33m [0.8, 0.1, 0.1][0m
+[1;36mleave_one_num[0m =[1;33m 2[0m
+[1;36mreal_time_process[0m =[1;33m False[0m
+[1;36mmetrics[0m =[1;33m ['Recall', 'NDCG'][0m
+[1;36mtopk[0m =[1;33m [5, 10, 20][0m
+[1;36mvalid_metric[0m =[1;33m NDCG@5[0m
+[1;36meval_batch_size[0m =[1;33m 1024[0m
+[1;36mmetric_decimal_place[0m =[1;33m 4[0m
+
+[1;35mDataset Hyper Parameters:
+[0m[1;36mfield_separator[0m =[1;33m 	[0m
+[1;36mseq_separator[0m =[1;33m  [0m
+[1;36mUSER_ID_FIELD[0m =[1;33m user_id[0m
+[1;36mITEM_ID_FIELD[0m =[1;33m item_id[0m
+[1;36mRATING_FIELD[0m =[1;33m rating[0m
+[1;36mTIME_FIELD[0m =[1;33m timestamp[0m
+[1;36mseq_len[0m =[1;33m None[0m
+[1;36mLABEL_FIELD[0m =[1;33m label[0m
+[1;36mthreshold[0m =[1;33m None[0m
+[1;36mNEG_PREFIX[0m =[1;33m neg_[0m
+[1;36mload_col[0m =[1;33m {'inter': ['user_id', 'item_id', 'rating', 'timestamp']}[0m
+[1;36munload_col[0m =[1;33m None[0m
+[1;36munused_col[0m =[1;33m None[0m
+[1;36madditional_feat_suffix[0m =[1;33m None[0m
+[1;36mlowest_val[0m =[1;33m None[0m
+[1;36mhighest_val[0m =[1;33m None[0m
+[1;36mequal_val[0m =[1;33m None[0m
+[1;36mnot_equal_val[0m =[1;33m None[0m
+[1;36mmax_user_inter_num[0m =[1;33m None[0m
+[1;36mmin_user_inter_num[0m =[1;33m 5[0m
+[1;36mmax_item_inter_num[0m =[1;33m None[0m
+[1;36mmin_item_inter_num[0m =[1;33m 5[0m
+[1;36mfields_in_same_space[0m =[1;33m None[0m
+[1;36mpreload_weight[0m =[1;33m None[0m
+[1;36mnormalize_field[0m =[1;33m None[0m
+[1;36mnormalize_all[0m =[1;33m None[0m
+[1;36mITEM_LIST_LENGTH_FIELD[0m =[1;33m item_length[0m
+[1;36mLIST_SUFFIX[0m =[1;33m _list[0m
+[1;36mMAX_ITEM_LIST_LENGTH[0m =[1;33m 50[0m
+[1;36mPOSITION_FIELD[0m =[1;33m position_id[0m
+[1;36mHEAD_ENTITY_ID_FIELD[0m =[1;33m head_id[0m
+[1;36mTAIL_ENTITY_ID_FIELD[0m =[1;33m tail_id[0m
+[1;36mRELATION_ID_FIELD[0m =[1;33m relation_id[0m
+[1;36mENTITY_ID_FIELD[0m =[1;33m entity_id[0m
+
+[1;35mOther Hyper Parameters: 
+[0m[1;36mvalid_metric_bigger[0m = [1;33mTrue[0m
+[1;36mn_layers[0m = [1;33m2[0m
+[1;36mn_heads[0m = [1;33m2[0m
+[1;36mhidden_size[0m = [1;33m128[0m
+[1;36minner_size[0m = [1;33m256[0m
+[1;36mhidden_dropout_prob[0m = [1;33m0.5[0m
+[1;36mattn_dropout_prob[0m = [1;33m0.5[0m
+[1;36mhidden_act[0m = [1;33mgelu[0m
+[1;36mlayer_norm_eps[0m = [1;33m1e-12[0m
+[1;36minitializer_range[0m = [1;33m0.02[0m
+[1;36mloss_type[0m = [1;33mCE[0m
+[1;36mlmd[0m = [1;33m0.1[0m
+[1;36mlmd_sem[0m = [1;33m0.1[0m
+[1;36mSSL_AUG[0m = [1;33mDuoRec[0m
+[1;36mrm_dup_inter[0m = [1;33mNone[0m
+[1;36mfilter_inter_by_user_or_item[0m = [1;33mTrue[0m
+[1;36mSOURCE_ID_FIELD[0m = [1;33msource_id[0m
+[1;36mTARGET_ID_FIELD[0m = [1;33mtarget_id[0m
+[1;36mbenchmark_filename[0m = [1;33mNone[0m
+[1;36mMODEL_TYPE[0m = [1;33mModelType.SEQUENTIAL[0m
+[1;36mlog_root[0m = [1;33m./log/[0m
+[1;36mtau[0m = [1;33m1[0m
+[1;36mcontrast[0m = [1;33mus_x[0m
+[1;36msim[0m = [1;33mdot[0m
+[1;36mMODEL_INPUT_TYPE[0m = [1;33mInputType.POINTWISE[0m
+[1;36meval_type[0m = [1;33mEvaluatorType.RANKING[0m
+[1;36mdevice[0m = [1;33mcuda[0m
+[1;36mtrain_neg_sample_args[0m = [1;33m{'strategy': 'none'}[0m
+[1;36mlog_dir[0m = [1;33m/data/lch/duo/log/FPSRec/microlens/bs256-lmd0.1-sem0.1-us_x-Jan-10-2026_10-32-00-lr0.001-l20-tau1-dot-DPh0.5-DPa0.5[0m
+
+
+Sat 10 Jan 2026 10:32:02 INFO  [1;35mmicrolens[0m
+[1;34mThe number of users[0m: 98130
+[1;34mAverage actions of users[0m: 7.186193683824354
+[1;34mThe number of items[0m: 17229
+[1;34mAverage actions of items[0m: 40.93185511957279
+[1;34mThe number of inters[0m: 705174
+[1;34mThe sparsity of the dataset[0m: 99.95829055399349%
+[1;34mRemain Fields[0m: ['user_id', 'item_id', 'rating', 'timestamp']
+Sat 10 Jan 2026 10:32:05 INFO  [1;35mBuild[0m[1;33m [SequentialDataLoader][0m for [1;33m[train][0m with format [1;33m[InputType.POINTWISE][0m
+Sat 10 Jan 2026 10:32:05 INFO  [1;35m[train][0m[1;33m No Negative Sampling[0m
+Sat 10 Jan 2026 10:32:05 INFO  [1;35m[train][0m[1;36m batch_size[0m = [1;33m[256][0m, [1;36mshuffle[0m = [1;33m[True]
+[0m
+Sat 10 Jan 2026 10:32:12 INFO  [1;35mBuild[0m[1;33m [SequentialFullDataLoader][0m for [1;33m[evaluation][0m with format [1;33m[InputType.POINTWISE][0m
+Sat 10 Jan 2026 10:32:12 INFO  [1;35mEvaluation Setting:[0m
+	[1;34mGroup by[0m user_id
+	[1;34mOrdering[0m: {'strategy': 'by', 'field': 'timestamp', 'ascending': True}
+	[1;34mSplitting[0m: {'strategy': 'loo', 'leave_one_num': 2}
+	[1;34mNegative Sampling[0m: {'strategy': 'full', 'distribution': 'uniform'}
+Sat 10 Jan 2026 10:32:12 INFO  [1;35m[evaluation][0m[1;36m batch_size[0m = [1;33m[1024][0m, [1;36mshuffle[0m = [1;33m[False]
+[0m
+Sat 10 Jan 2026 10:32:35 INFO  FPSRec(
+  (emb_dropout): Dropout(p=0.5, inplace=False)
+  (attention_layernorms): ModuleList(
+    (0): LayerNorm((128,), eps=1e-08, elementwise_affine=True)
+    (1): LayerNorm((128,), eps=1e-08, elementwise_affine=True)
+  )
+  (attention_layers): ModuleList(
+    (0): MultiheadAttention(
+      (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+    )
+    (1): MultiheadAttention(
+      (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+    )
+  )
+  (forward_layernorms): ModuleList(
+    (0): LayerNorm((128,), eps=1e-08, elementwise_affine=True)
+    (1): LayerNorm((128,), eps=1e-08, elementwise_affine=True)
+  )
+  (forward_layers): ModuleList(
+    (0): PointWiseFeedForward(
+      (conv1): Conv1d(128, 128, kernel_size=(1,), stride=(1,))
+      (dropout1): Dropout(p=0.5, inplace=False)
+      (relu): ReLU()
+      (conv2): Conv1d(128, 128, kernel_size=(1,), stride=(1,))
+      (dropout2): Dropout(p=0.5, inplace=False)
+    )
+    (1): PointWiseFeedForward(
+      (conv1): Conv1d(128, 128, kernel_size=(1,), stride=(1,))
+      (dropout1): Dropout(p=0.5, inplace=False)
+      (relu): ReLU()
+      (conv2): Conv1d(128, 128, kernel_size=(1,), stride=(1,))
+      (dropout2): Dropout(p=0.5, inplace=False)
+    )
+  )
+  (attention_layernorms_l): ModuleList(
+    (0): LayerNorm((128,), eps=1e-08, elementwise_affine=True)
+    (1): LayerNorm((128,), eps=1e-08, elementwise_affine=True)
+  )
+  (attention_layers_l): ModuleList(
+    (0): MultiheadAttention(
+      (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+    )
+    (1): MultiheadAttention(
+      (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+    )
+  )
+  (forward_layernorms_l): ModuleList(
+    (0): LayerNorm((128,), eps=1e-08, elementwise_affine=True)
+    (1): LayerNorm((128,), eps=1e-08, elementwise_affine=True)
+  )
+  (forward_layers_l): ModuleList(
+    (0): PointWiseFeedForward(
+      (conv1): Conv1d(128, 128, kernel_size=(1,), stride=(1,))
+      (dropout1): Dropout(p=0.5, inplace=False)
+      (relu): ReLU()
+      (conv2): Conv1d(128, 128, kernel_size=(1,), stride=(1,))
+      (dropout2): Dropout(p=0.5, inplace=False)
+    )
+    (1): PointWiseFeedForward(
+      (conv1): Conv1d(128, 128, kernel_size=(1,), stride=(1,))
+      (dropout1): Dropout(p=0.5, inplace=False)
+      (relu): ReLU()
+      (conv2): Conv1d(128, 128, kernel_size=(1,), stride=(1,))
+      (dropout2): Dropout(p=0.5, inplace=False)
+    )
+  )
+  (attention_layernorms_h): ModuleList(
+    (0): LayerNorm((128,), eps=1e-08, elementwise_affine=True)
+    (1): LayerNorm((128,), eps=1e-08, elementwise_affine=True)
+  )
+  (attention_layers_h): ModuleList(
+    (0): MultiheadAttention(
+      (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+    )
+    (1): MultiheadAttention(
+      (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+    )
+  )
+  (forward_layernorms_h): ModuleList(
+    (0): LayerNorm((128,), eps=1e-08, elementwise_affine=True)
+    (1): LayerNorm((128,), eps=1e-08, elementwise_affine=True)
+  )
+  (forward_layers_h): ModuleList(
+    (0): PointWiseFeedForward(
+      (conv1): Conv1d(128, 128, kernel_size=(1,), stride=(1,))
+      (dropout1): Dropout(p=0.5, inplace=False)
+      (relu): ReLU()
+      (conv2): Conv1d(128, 128, kernel_size=(1,), stride=(1,))
+      (dropout2): Dropout(p=0.5, inplace=False)
+    )
+    (1): PointWiseFeedForward(
+      (conv1): Conv1d(128, 128, kernel_size=(1,), stride=(1,))
+      (dropout1): Dropout(p=0.5, inplace=False)
+      (relu): ReLU()
+      (conv2): Conv1d(128, 128, kernel_size=(1,), stride=(1,))
+      (dropout2): Dropout(p=0.5, inplace=False)
+    )
+  )
+  (last_layernorm): LayerNorm((128,), eps=1e-08, elementwise_affine=True)
+  (item_embedding): Embedding(17229, 128, padding_idx=0)
+  (position_embedding): Embedding(50, 128)
+  (trm_encoder): TransformerEncoder(
+    (layer): ModuleList(
+      (0): TransformerLayer(
+        (multi_head_attention): MultiHeadAttention(
+          (query): Linear(in_features=128, out_features=128, bias=True)
+          (key): Linear(in_features=128, out_features=128, bias=True)
+          (value): Linear(in_features=128, out_features=128, bias=True)
+          (attn_dropout): Dropout(p=0.5, inplace=False)
+          (dense): Linear(in_features=128, out_features=128, bias=True)
+          (LayerNorm): LayerNorm((128,), eps=1e-12, elementwise_affine=True)
+          (out_dropout): Dropout(p=0.5, inplace=False)
+        )
+        (feed_forward): FeedForward(
+          (dense_1): Linear(in_features=128, out_features=256, bias=True)
+          (dense_2): Linear(in_features=256, out_features=128, bias=True)
+          (LayerNorm): LayerNorm((128,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.5, inplace=False)
+        )
+      )
+      (1): TransformerLayer(
+        (multi_head_attention): MultiHeadAttention(
+          (query): Linear(in_features=128, out_features=128, bias=True)
+          (key): Linear(in_features=128, out_features=128, bias=True)
+          (value): Linear(in_features=128, out_features=128, bias=True)
+          (attn_dropout): Dropout(p=0.5, inplace=False)
+          (dense): Linear(in_features=128, out_features=128, bias=True)
+          (LayerNorm): LayerNorm((128,), eps=1e-12, elementwise_affine=True)
+          (out_dropout): Dropout(p=0.5, inplace=False)
+        )
+        (feed_forward): FeedForward(
+          (dense_1): Linear(in_features=128, out_features=256, bias=True)
+          (dense_2): Linear(in_features=256, out_features=128, bias=True)
+          (LayerNorm): LayerNorm((128,), eps=1e-12, elementwise_affine=True)
+          (dropout): Dropout(p=0.5, inplace=False)
+        )
+      )
+    )
+  )
+  (LayerNorm): LayerNorm((128,), eps=1e-12, elementwise_affine=True)
+  (dropout): Dropout(p=0.5, inplace=False)
+  (loss_fct): CrossEntropyLoss()
+)[1;34m
+Trainable parameters[0m: 3074688
+Sat 10 Jan 2026 10:35:09 INFO  [1;32mepoch 0 training[0m [[1;34mtime[0m: 154.68s, [1;34mtrain loss[0m: 42363.7088]
+Sat 10 Jan 2026 10:35:24 INFO  [1;32mepoch 0 evaluating[0m [[1;34mtime[0m: 14.72s, [1;34mvalid_score[0m: 0.023600]
+Sat 10 Jan 2026 10:35:24 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0387    recall@10 : 0.0632    recall@20 : 0.096    ndcg@5 : 0.0236    ndcg@10 : 0.0314    ndcg@20 : 0.0397    
+Sat 10 Jan 2026 10:37:58 INFO  [1;32mepoch 1 training[0m [[1;34mtime[0m: 154.20s, [1;34mtrain loss[0m: 38654.0699]
+Sat 10 Jan 2026 10:38:14 INFO  [1;32mepoch 1 evaluating[0m [[1;34mtime[0m: 15.31s, [1;34mvalid_score[0m: 0.030600]
+Sat 10 Jan 2026 10:38:14 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0484    recall@10 : 0.0776    recall@20 : 0.1179    ndcg@5 : 0.0306    ndcg@10 : 0.04    ndcg@20 : 0.0501    
+Sat 10 Jan 2026 10:40:46 INFO  [1;32mepoch 2 training[0m [[1;34mtime[0m: 152.25s, [1;34mtrain loss[0m: 37403.5698]
+Sat 10 Jan 2026 10:41:01 INFO  [1;32mepoch 2 evaluating[0m [[1;34mtime[0m: 15.15s, [1;34mvalid_score[0m: 0.035100]
+Sat 10 Jan 2026 10:41:01 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0561    recall@10 : 0.0893    recall@20 : 0.1322    ndcg@5 : 0.0351    ndcg@10 : 0.0458    ndcg@20 : 0.0565    
+Sat 10 Jan 2026 10:43:35 INFO  [1;32mepoch 3 training[0m [[1;34mtime[0m: 153.74s, [1;34mtrain loss[0m: 36660.5875]
+Sat 10 Jan 2026 10:43:51 INFO  [1;32mepoch 3 evaluating[0m [[1;34mtime[0m: 15.61s, [1;34mvalid_score[0m: 0.038000]
+Sat 10 Jan 2026 10:43:51 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.061    recall@10 : 0.0954    recall@20 : 0.1405    ndcg@5 : 0.038    ndcg@10 : 0.0491    ndcg@20 : 0.0605    
+Sat 10 Jan 2026 10:46:22 INFO  [1;32mepoch 4 training[0m [[1;34mtime[0m: 150.79s, [1;34mtrain loss[0m: 36125.8448]
+Sat 10 Jan 2026 10:46:37 INFO  [1;32mepoch 4 evaluating[0m [[1;34mtime[0m: 15.53s, [1;34mvalid_score[0m: 0.040200]
+Sat 10 Jan 2026 10:46:37 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.064    recall@10 : 0.0999    recall@20 : 0.1458    ndcg@5 : 0.0402    ndcg@10 : 0.0517    ndcg@20 : 0.0633    
+Sat 10 Jan 2026 10:49:09 INFO  [1;32mepoch 5 training[0m [[1;34mtime[0m: 151.21s, [1;34mtrain loss[0m: 35711.4309]
+Sat 10 Jan 2026 10:49:25 INFO  [1;32mepoch 5 evaluating[0m [[1;34mtime[0m: 15.92s, [1;34mvalid_score[0m: 0.041000]
+Sat 10 Jan 2026 10:49:25 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0665    recall@10 : 0.1026    recall@20 : 0.1489    ndcg@5 : 0.041    ndcg@10 : 0.0527    ndcg@20 : 0.0643    
+Sat 10 Jan 2026 10:51:58 INFO  [1;32mepoch 6 training[0m [[1;34mtime[0m: 153.23s, [1;34mtrain loss[0m: 35368.8687]
+Sat 10 Jan 2026 10:52:14 INFO  [1;32mepoch 6 evaluating[0m [[1;34mtime[0m: 15.93s, [1;34mvalid_score[0m: 0.041500]
+Sat 10 Jan 2026 10:52:14 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.067    recall@10 : 0.104    recall@20 : 0.1512    ndcg@5 : 0.0415    ndcg@10 : 0.0534    ndcg@20 : 0.0653    
+Sat 10 Jan 2026 10:54:44 INFO  [1;32mepoch 7 training[0m [[1;34mtime[0m: 149.39s, [1;34mtrain loss[0m: 35081.4455]
+Sat 10 Jan 2026 10:54:59 INFO  [1;32mepoch 7 evaluating[0m [[1;34mtime[0m: 15.56s, [1;34mvalid_score[0m: 0.041000]
+Sat 10 Jan 2026 10:54:59 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0671    recall@10 : 0.1052    recall@20 : 0.153    ndcg@5 : 0.041    ndcg@10 : 0.0533    ndcg@20 : 0.0653    
+Sat 10 Jan 2026 10:57:32 INFO  [1;32mepoch 8 training[0m [[1;34mtime[0m: 152.35s, [1;34mtrain loss[0m: 34820.4574]
+Sat 10 Jan 2026 10:57:48 INFO  [1;32mepoch 8 evaluating[0m [[1;34mtime[0m: 16.01s, [1;34mvalid_score[0m: 0.041700]
+Sat 10 Jan 2026 10:57:48 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0689    recall@10 : 0.1066    recall@20 : 0.1536    ndcg@5 : 0.0417    ndcg@10 : 0.0539    ndcg@20 : 0.0657    
+Sat 10 Jan 2026 11:00:19 INFO  [1;32mepoch 9 training[0m [[1;34mtime[0m: 151.50s, [1;34mtrain loss[0m: 34589.4316]
+Sat 10 Jan 2026 11:00:35 INFO  [1;32mepoch 9 evaluating[0m [[1;34mtime[0m: 15.92s, [1;34mvalid_score[0m: 0.041700]
+Sat 10 Jan 2026 11:00:35 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.069    recall@10 : 0.1074    recall@20 : 0.1555    ndcg@5 : 0.0417    ndcg@10 : 0.0541    ndcg@20 : 0.0662    
+Sat 10 Jan 2026 11:03:06 INFO  [1;32mepoch 10 training[0m [[1;34mtime[0m: 150.74s, [1;34mtrain loss[0m: 34377.1766]
+Sat 10 Jan 2026 11:03:22 INFO  [1;32mepoch 10 evaluating[0m [[1;34mtime[0m: 15.70s, [1;34mvalid_score[0m: 0.041200]
+Sat 10 Jan 2026 11:03:22 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0688    recall@10 : 0.1066    recall@20 : 0.1548    ndcg@5 : 0.0412    ndcg@10 : 0.0534    ndcg@20 : 0.0655    
+Sat 10 Jan 2026 11:05:53 INFO  [1;32mepoch 11 training[0m [[1;34mtime[0m: 151.72s, [1;34mtrain loss[0m: 34191.6998]
+Sat 10 Jan 2026 11:06:10 INFO  [1;32mepoch 11 evaluating[0m [[1;34mtime[0m: 16.15s, [1;34mvalid_score[0m: 0.041600]
+Sat 10 Jan 2026 11:06:10 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0693    recall@10 : 0.108    recall@20 : 0.155    ndcg@5 : 0.0416    ndcg@10 : 0.0541    ndcg@20 : 0.0659    
+Sat 10 Jan 2026 11:08:41 INFO  [1;32mepoch 12 training[0m [[1;34mtime[0m: 151.19s, [1;34mtrain loss[0m: 34027.7295]
+Sat 10 Jan 2026 11:08:56 INFO  [1;32mepoch 12 evaluating[0m [[1;34mtime[0m: 15.41s, [1;34mvalid_score[0m: 0.042100]
+Sat 10 Jan 2026 11:08:56 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0703    recall@10 : 0.1095    recall@20 : 0.1564    ndcg@5 : 0.0421    ndcg@10 : 0.0548    ndcg@20 : 0.0666    
+Sat 10 Jan 2026 11:11:28 INFO  [1;32mepoch 13 training[0m [[1;34mtime[0m: 151.69s, [1;34mtrain loss[0m: 33866.4000]
+Sat 10 Jan 2026 11:11:45 INFO  [1;32mepoch 13 evaluating[0m [[1;34mtime[0m: 16.49s, [1;34mvalid_score[0m: 0.041500]
+Sat 10 Jan 2026 11:11:45 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.07    recall@10 : 0.1091    recall@20 : 0.1569    ndcg@5 : 0.0415    ndcg@10 : 0.0542    ndcg@20 : 0.0662    
+Sat 10 Jan 2026 11:14:17 INFO  [1;32mepoch 14 training[0m [[1;34mtime[0m: 151.90s, [1;34mtrain loss[0m: 33726.6914]
+Sat 10 Jan 2026 11:14:33 INFO  [1;32mepoch 14 evaluating[0m [[1;34mtime[0m: 16.02s, [1;34mvalid_score[0m: 0.042000]
+Sat 10 Jan 2026 11:14:33 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0707    recall@10 : 0.1089    recall@20 : 0.1562    ndcg@5 : 0.042    ndcg@10 : 0.0543    ndcg@20 : 0.0662    
+Sat 10 Jan 2026 11:17:05 INFO  [1;32mepoch 15 training[0m [[1;34mtime[0m: 152.32s, [1;34mtrain loss[0m: 33592.3233]
+Sat 10 Jan 2026 11:17:21 INFO  [1;32mepoch 15 evaluating[0m [[1;34mtime[0m: 15.94s, [1;34mvalid_score[0m: 0.041600]
+Sat 10 Jan 2026 11:17:21 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0699    recall@10 : 0.1092    recall@20 : 0.1565    ndcg@5 : 0.0416    ndcg@10 : 0.0543    ndcg@20 : 0.0662    
+Sat 10 Jan 2026 11:19:54 INFO  [1;32mepoch 16 training[0m [[1;34mtime[0m: 153.19s, [1;34mtrain loss[0m: 33478.0351]
+Sat 10 Jan 2026 11:20:10 INFO  [1;32mepoch 16 evaluating[0m [[1;34mtime[0m: 15.83s, [1;34mvalid_score[0m: 0.041900]
+Sat 10 Jan 2026 11:20:10 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0715    recall@10 : 0.1096    recall@20 : 0.157    ndcg@5 : 0.0419    ndcg@10 : 0.0541    ndcg@20 : 0.0661    
+Sat 10 Jan 2026 11:22:42 INFO  [1;32mepoch 17 training[0m [[1;34mtime[0m: 151.72s, [1;34mtrain loss[0m: 33372.2745]
+Sat 10 Jan 2026 11:22:57 INFO  [1;32mepoch 17 evaluating[0m [[1;34mtime[0m: 15.47s, [1;34mvalid_score[0m: 0.041900]
+Sat 10 Jan 2026 11:22:57 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0713    recall@10 : 0.1096    recall@20 : 0.1565    ndcg@5 : 0.0419    ndcg@10 : 0.0543    ndcg@20 : 0.0661    
+Sat 10 Jan 2026 11:25:29 INFO  [1;32mepoch 18 training[0m [[1;34mtime[0m: 152.10s, [1;34mtrain loss[0m: 33261.0609]
+Sat 10 Jan 2026 11:25:44 INFO  [1;32mepoch 18 evaluating[0m [[1;34mtime[0m: 15.14s, [1;34mvalid_score[0m: 0.042600]
+Sat 10 Jan 2026 11:25:44 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0721    recall@10 : 0.1097    recall@20 : 0.1564    ndcg@5 : 0.0426    ndcg@10 : 0.0548    ndcg@20 : 0.0665    
+Sat 10 Jan 2026 11:28:16 INFO  [1;32mepoch 19 training[0m [[1;34mtime[0m: 151.64s, [1;34mtrain loss[0m: 33166.9865]
+Sat 10 Jan 2026 11:28:32 INFO  [1;32mepoch 19 evaluating[0m [[1;34mtime[0m: 15.80s, [1;34mvalid_score[0m: 0.041500]
+Sat 10 Jan 2026 11:28:32 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.071    recall@10 : 0.1096    recall@20 : 0.1562    ndcg@5 : 0.0415    ndcg@10 : 0.054    ndcg@20 : 0.0657    
+Sat 10 Jan 2026 11:31:05 INFO  [1;32mepoch 20 training[0m [[1;34mtime[0m: 152.74s, [1;34mtrain loss[0m: 33084.2596]
+Sat 10 Jan 2026 11:31:20 INFO  [1;32mepoch 20 evaluating[0m [[1;34mtime[0m: 15.07s, [1;34mvalid_score[0m: 0.042100]
+Sat 10 Jan 2026 11:31:20 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0717    recall@10 : 0.1098    recall@20 : 0.1574    ndcg@5 : 0.0421    ndcg@10 : 0.0543    ndcg@20 : 0.0664    
+Sat 10 Jan 2026 11:33:52 INFO  [1;32mepoch 21 training[0m [[1;34mtime[0m: 151.82s, [1;34mtrain loss[0m: 32996.6876]
+Sat 10 Jan 2026 11:34:07 INFO  [1;32mepoch 21 evaluating[0m [[1;34mtime[0m: 15.33s, [1;34mvalid_score[0m: 0.042200]
+Sat 10 Jan 2026 11:34:07 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0717    recall@10 : 0.1096    recall@20 : 0.1559    ndcg@5 : 0.0422    ndcg@10 : 0.0544    ndcg@20 : 0.0661    
+Sat 10 Jan 2026 11:36:40 INFO  [1;32mepoch 22 training[0m [[1;34mtime[0m: 152.74s, [1;34mtrain loss[0m: 32920.0775]
+Sat 10 Jan 2026 11:36:55 INFO  [1;32mepoch 22 evaluating[0m [[1;34mtime[0m: 15.08s, [1;34mvalid_score[0m: 0.041700]
+Sat 10 Jan 2026 11:36:55 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0709    recall@10 : 0.1099    recall@20 : 0.1568    ndcg@5 : 0.0417    ndcg@10 : 0.0543    ndcg@20 : 0.0661    
+Sat 10 Jan 2026 11:39:19 INFO  [1;32mepoch 23 training[0m [[1;34mtime[0m: 144.64s, [1;34mtrain loss[0m: 32848.3300]
+Sat 10 Jan 2026 11:39:33 INFO  [1;32mepoch 23 evaluating[0m [[1;34mtime[0m: 13.92s, [1;34mvalid_score[0m: 0.041500]
+Sat 10 Jan 2026 11:39:33 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0711    recall@10 : 0.1096    recall@20 : 0.1565    ndcg@5 : 0.0415    ndcg@10 : 0.0539    ndcg@20 : 0.0658    
+Sat 10 Jan 2026 11:41:57 INFO  [1;32mepoch 24 training[0m [[1;34mtime[0m: 144.19s, [1;34mtrain loss[0m: 32772.2856]
+Sat 10 Jan 2026 11:42:11 INFO  [1;32mepoch 24 evaluating[0m [[1;34mtime[0m: 13.96s, [1;34mvalid_score[0m: 0.040700]
+Sat 10 Jan 2026 11:42:11 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0701    recall@10 : 0.1089    recall@20 : 0.1555    ndcg@5 : 0.0407    ndcg@10 : 0.0533    ndcg@20 : 0.065    
+Sat 10 Jan 2026 11:44:36 INFO  [1;32mepoch 25 training[0m [[1;34mtime[0m: 144.80s, [1;34mtrain loss[0m: 32710.9927]
+Sat 10 Jan 2026 11:44:50 INFO  [1;32mepoch 25 evaluating[0m [[1;34mtime[0m: 13.85s, [1;34mvalid_score[0m: 0.041800]
+Sat 10 Jan 2026 11:44:50 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0709    recall@10 : 0.1099    recall@20 : 0.1557    ndcg@5 : 0.0418    ndcg@10 : 0.0544    ndcg@20 : 0.0659    
+Sat 10 Jan 2026 11:47:18 INFO  [1;32mepoch 26 training[0m [[1;34mtime[0m: 148.31s, [1;34mtrain loss[0m: 32647.0093]
+Sat 10 Jan 2026 11:47:33 INFO  [1;32mepoch 26 evaluating[0m [[1;34mtime[0m: 14.13s, [1;34mvalid_score[0m: 0.041800]
+Sat 10 Jan 2026 11:47:33 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0713    recall@10 : 0.1091    recall@20 : 0.1558    ndcg@5 : 0.0418    ndcg@10 : 0.0539    ndcg@20 : 0.0657    
+Sat 10 Jan 2026 11:49:47 INFO  [1;32mepoch 27 training[0m [[1;34mtime[0m: 134.00s, [1;34mtrain loss[0m: 32587.0075]
+Sat 10 Jan 2026 11:50:00 INFO  [1;32mepoch 27 evaluating[0m [[1;34mtime[0m: 13.82s, [1;34mvalid_score[0m: 0.041900]
+Sat 10 Jan 2026 11:50:00 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0715    recall@10 : 0.1085    recall@20 : 0.1541    ndcg@5 : 0.0419    ndcg@10 : 0.0538    ndcg@20 : 0.0653    
+Sat 10 Jan 2026 11:52:29 INFO  [1;32mepoch 28 training[0m [[1;34mtime[0m: 148.48s, [1;34mtrain loss[0m: 32530.5770]
+Sat 10 Jan 2026 11:52:44 INFO  [1;32mepoch 28 evaluating[0m [[1;34mtime[0m: 15.60s, [1;34mvalid_score[0m: 0.041600]
+Sat 10 Jan 2026 11:52:44 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.071    recall@10 : 0.1085    recall@20 : 0.1547    ndcg@5 : 0.0416    ndcg@10 : 0.0536    ndcg@20 : 0.0653    
+Sat 10 Jan 2026 11:55:17 INFO  [1;32mepoch 29 training[0m [[1;34mtime[0m: 152.80s, [1;34mtrain loss[0m: 32479.4445]
+Sat 10 Jan 2026 11:55:43 INFO  [1;32mepoch 29 evaluating[0m [[1;34mtime[0m: 13.47s, [1;34mvalid_score[0m: 0.041600]
+Sat 10 Jan 2026 11:55:43 INFO  [1;34mvalid result[0m: 
+recall@5 : 0.0712    recall@10 : 0.1091    recall@20 : 0.1553    ndcg@5 : 0.0416    ndcg@10 : 0.0538    ndcg@20 : 0.0655    
+Sat 10 Jan 2026 11:55:43 INFO  Finished training, best eval result in epoch 18
+Sat 10 Jan 2026 11:55:49 INFO  Loading model structure and parameters from /data/lch/duo/log/FPSRec/microlens/bs256-lmd0.1-sem0.1-us_x-Jan-10-2026_10-32-00-lr0.001-l20-tau1-dot-DPh0.5-DPa0.5/model.pth
+Sat 10 Jan 2026 11:56:05 INFO  [1;33mbest valid [0m: {'recall@5': 0.0721, 'recall@10': 0.1097, 'recall@20': 0.1564, 'ndcg@5': 0.0426, 'ndcg@10': 0.0548, 'ndcg@20': 0.0665}
+Sat 10 Jan 2026 11:56:05 INFO  [1;33mtest result[0m: {'recall@5': 0.0583, 'recall@10': 0.0928, 'recall@20': 0.1369, 'ndcg@5': 0.0349, 'ndcg@10': 0.046, 'ndcg@20': 0.0571}
